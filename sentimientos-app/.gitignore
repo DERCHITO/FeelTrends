@@ -1,0 +1,13 @@
+# Node
+node_modules/
+build/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+
+# General
+.env
+.DS_Store
+.vscode/
