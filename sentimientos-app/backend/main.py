@@ -9,7 +9,9 @@ from dotenv import load_dotenv
 load_dotenv()
 app = FastAPI()
 
-    return {"message": "Sentimientos API - MVP"}
+BEARER_TOKEN = os.getenv("TWITTER_BEARER_TOKEN")
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
+INSTAGRAM_ACCESS_TOKEN = os.getenv("INSTAGRAM_ACCESS_TOKEN")
 
 @app.get("/analizar/twitter")
 def analizar_twitter(query: str = Query(...), count: int = 10):
