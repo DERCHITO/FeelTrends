@@ -2,3 +2,5 @@ fastapi
 uvicorn
 tweepy
 requests
+python-dotenv
+google-cloud-language
